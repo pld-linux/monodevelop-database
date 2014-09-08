@@ -2,22 +2,22 @@
 Summary:	Database Add-in for MonoDevelop
 Summary(pl.UTF-8):	Dodatek Database do programu MonoDevelop
 Name:		monodevelop-database
-%define	mainver	4.2.2
-%define	subver	2
+%define	mainver	5.0.1
+%define	subver	0
 Version:	%{mainver}.%{subver}
 Release:	1
 License:	MIT
 Group:		Development/Tools
 Source0:	http://download.mono-project.com/sources/monodevelop-database/%{name}-%{mainver}-%{subver}.tar.bz2
-# Source0-md5:	73dd5fbb516599d7c6393ac452f6f288
+# Source0-md5:	1c893258e61cbdb983bbfeaba419eb56
 URL:		http://monodevelop.com/
 BuildRequires:	dotnet-gtk-sharp2-devel >= 2.12.8
 BuildRequires:	gettext-devel
 BuildRequires:	mono-addins-devel >= 0.4
 BuildRequires:	mono-csharp >= 2.6.1
-BuildRequires:	monodevelop >= 4.2.2
+BuildRequires:	monodevelop >= 5.0.1
 BuildRequires:	pkgconfig
-Requires:	monodevelop >= 4.2.2
+Requires:	monodevelop >= 5.0.1
 ExcludeArch:	i386
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
