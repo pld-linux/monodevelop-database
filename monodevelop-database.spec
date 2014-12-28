@@ -12,7 +12,7 @@ Source0:	http://download.mono-project.com/sources/monodevelop-database/%{name}-%
 # Source0-md5:	1c893258e61cbdb983bbfeaba419eb56
 URL:		http://monodevelop.com/
 BuildRequires:	dotnet-gtk-sharp2-devel >= 2.12.8
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	mono-addins-devel >= 0.4
 BuildRequires:	mono-csharp >= 2.6.1
 BuildRequires:	monodevelop >= 5.0.1
