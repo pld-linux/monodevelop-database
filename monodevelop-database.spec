@@ -2,22 +2,23 @@
 Summary:	Database Add-in for MonoDevelop
 Summary(pl.UTF-8):	Dodatek Database do programu MonoDevelop
 Name:		monodevelop-database
-%define	mainver	5.0.1
-%define	subver	0
-Version:	%{mainver}.%{subver}
+Version:	5.10.0.871
 Release:	1
 License:	MIT
 Group:		Development/Tools
-Source0:	http://download.mono-project.com/sources/monodevelop-database/%{name}-%{mainver}-%{subver}.tar.bz2
-# Source0-md5:	1c893258e61cbdb983bbfeaba419eb56
+Source0:	http://download.mono-project.com/sources/monodevelop-database/%{name}-%{version}.tar.bz2
+# Source0-md5:	889a6c193d0c7da4f94ed94acc79c301
 URL:		http://monodevelop.com/
 BuildRequires:	dotnet-gtk-sharp2-devel >= 2.12.8
 BuildRequires:	gettext-tools
 BuildRequires:	mono-addins-devel >= 0.4
+BuildRequires:	mono-addins-gui-devel >= 0.4
 BuildRequires:	mono-csharp >= 2.6.1
-BuildRequires:	monodevelop >= 5.0.1
+BuildRequires:	monodevelop >= 5.10.0
 BuildRequires:	pkgconfig
-Requires:	monodevelop >= 5.0.1
+Requires:	dotnet-gtk-sharp2 >= 2.12.8
+Requires:	mono-addins-gui >= 0.4
+Requires:	monodevelop >= 5.10.0
 ExcludeArch:	i386
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,7 +31,7 @@ Dodatek Database do programu MonoDevelop - zintegrowany eksplorator i
 edytor baz danych.
 
 %prep
-%setup -q -n %{name}-%{mainver}
+%setup -q -n %{name}-5.10
 
 %build
 %configure
