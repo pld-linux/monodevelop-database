@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.mono
 Summary:	Database Add-in for MonoDevelop
 Summary(pl.UTF-8):	Dodatek Database do programu MonoDevelop
 Name:		monodevelop-database
